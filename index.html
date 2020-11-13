@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="https://kit.fontawesome.com/ff0ee12b4e.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github</title>
+    <link rel="stylesheet" href="dist/bundle.css" />
+  </head>
+  <body>
+    <header class="flex flex_row">
+      <nav class="flex flex_row flex_space_btw">
+        <img
+          src="./src/images/hamb.PNG"
+          alt="hambuger"
+          class="desktop_hidden hambugger"
+        />
+
+        <ul class="flex flex_row flex_center">
+          <li class="desktop_hidden"></li>
+          <li id="logo"><img src="./src/images/logo.PNG" alt="" /></li>
+          <li class="mobile_hidden">
+            <span class="search_input"
+              ><input type="text" placeholder="Search or jump to ..." />
+              <img src="./src/images/search_stuff.PNG" alt="search_stuff" />
+            </span>
+          </li>
+          <li class="mobile_hidden">Pull requests</li>
+          <li class="mobile_hidden">Issues</li>
+          <li class="mobile_hidden">Marketplace</li>
+          <li class="mobile_hidden">Explore</li>
+        </ul>
+        <ul class="flex flex_row flex_center">
+          <li>
+            <img
+              src="./src/images/notification.PNG"
+              alt="notification"
+              srcset=""
+            />
+          </li>
+          <li class="mobile_hidden">
+            <img src="./src/images/plussign.PNG" alt="plus sign" srcset="" />
+          </li>
+          <li id="profile_image_settings" class="mobile_hidden">
+            <img src="" alt="plus sign" id="nav_profileimage" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="flex flex_row mt-1 mobile_flex_col">
+      <section class="side_bar">
+        <div class="profile_image_name">
+          <img src="" alt="Avatar" id="user_profileimage" />
+          <div>
+            <h1 id="fullname">John Doe</h1>
+            <p id="username">Johndoe1</p>
+          </div>
+        </div>
+        <h5 id="Bio">Full Stack JavaScript Developer | Technical Writer</h5>
+        <button id="edit_button">Edit Profile</button>
+
+        <div>
+          <ul class="following_tab flex flex_row flex_center_horizontal">
+            <li>
+              <img src="./src/images/following.PNG" alt="followings" />
+              <span id="followers">0</span> followers
+            </li>
+            <li>. <span id="following">0</span> following</li>
+            <li></li>
+          </ul>
+        </div>
+      </section>
+      <section class="main_body">
+        <ul class="tag_list flex flex_row">
+          <li><img src="./src/images/overview.PNG" alt="" /> Overview</li>
+          <li class="active_tab">
+            <img src="./src/images/repository.PNG" alt="repo icon" /> Repository
+            <span id="repocount"></span>
+          </li>
+          <li>
+            <img src="./src/images/projects.PNG" alt="project icon" /> Project
+          </li>
+          <li><img src="./src/images/packages.PNG" alt="package" /> Package</li>
+        </ul>
+        <div class="search_filter flex flex_row">
+          <form id="search_form">
+            <input
+              type="text"
+              id="search_form_input"
+              placeholder="Find a repository..."
+            />
+          </form>
+
+          <button class="btn">Type All</button>
+          <button class="btn">Language All</button>
+        </div>
+        <article class="repositories">
+          <ul id="repolist">
+            <li>
+              <div class="content">
+                <p class="repo_title">Sme Stuff</p>
+                <p class="desc"></p>
+                <div class="meta_info">
+                  <span>
+                    <div class="color_lang" style="background-color: red"></div>
+                  </span>
+                </div>
+              </div>
+              <button>
+                <img src="./src/images/button_star.PNG" alt="button_stat" />
+                Star
+              </button>
+            </li>
+            <li>
+              <div class="content">
+                <p class="repo_title">Another Stuff</p>
+                <div class="meta_info"></div>
+              </div>
+              <button>
+                <img src="./src/images/button_star.PNG" alt="button_stat" />
+                Star
+              </button>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+    <script src="dist/bundle.js"></script>
+  </body>
+</html>
